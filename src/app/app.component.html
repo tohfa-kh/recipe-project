@@ -1,0 +1,9 @@
+<app-header (displayed)="onSwitching($event)"></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <app-recipe-book *ngIf="loadFeature === 'recipe'"></app-recipe-book>
+            <app-shopping-list *ngIf="loadFeature !== 'recipe'"></app-shopping-list>
+        </div>
+    </div>
+</div>
